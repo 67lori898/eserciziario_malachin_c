@@ -1,28 +1,22 @@
-#include <stdio.h>
-
+#include<stdio.h>
 int main()
 {
-    int num1 = 0, num2 = 0, count = 0;
+    int num1 = 0, num2 = 0,myNum, count = 0;
 
-    // Ciclo per ottenere due numeri positivi, con num1 < num2
-    do 
-    {
+
+    do {
         printf("Inserisci il primo numero positivo: ");
         scanf("%d", &num1);
         printf("Inserisci il secondo numero positivo: ");
         scanf("%d", &num2);
     } while (num1 >= num2 || num1 <= 0 || num2 <= 0); // Continua fino a quando i numeri non soddisfano la condizione
-
-    // Ciclo per stampare numeri dispari tra num1 e num2
-    count = num1;
-    do
-    {
-        if (count % 2 != 0)
-        {
-            printf("\n%d", count); // Stampa il numero dispari
-        }
-        count++;
-    } while (count <= num2);
+    count=num1; //count assume il valore di num1 (inizio dell'intervallo)
+    do{
+        
+        printf("\n%d",count);
+        count++; 
+        
+    }while(count>=num1&&count<=num2); 
 
     
 }
