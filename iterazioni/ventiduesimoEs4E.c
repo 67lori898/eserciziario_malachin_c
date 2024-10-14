@@ -1,7 +1,4 @@
 
-
-
-
 #include <stdio.h>
 
 int main(int argc, char *argv[])
@@ -18,7 +15,7 @@ int main(int argc, char *argv[])
 	  printf("Le coppie che sommate danno %d, sono:",n); 
       for(int i=0; i<n; i++)
 	  {
-      for(int=j+1; j<n; j++)
+       for(int j = i + 1;j < n; j++)
 	  {
 		//controlla se la somma tra i 2 numeri è uguale ad n
            if(j+i==n)
